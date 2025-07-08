@@ -168,3 +168,88 @@ body {
     padding: 20px;
   }
   
+  /* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .header-image {
+    height: 200px;
+  }
+
+  .hover-text {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  .p-img {
+    width: 100px;
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+
+  .projects {
+    padding: 20px;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project-info {
+    max-width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+/* Medium devices (tablets, 601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .project-info {
+    max-width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+/* Large devices (desktops, 901px and up) */
+@media (min-width: 901px) {
+  /* Optional: enhance large screen experience */
+  .projects {
+    padding: 40px 100px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
